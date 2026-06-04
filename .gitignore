@@ -1,0 +1,8 @@
+node_modules/
+versions/
+client_build/
+
+run.py
+
+Thumbs.db
+Desktop.ini

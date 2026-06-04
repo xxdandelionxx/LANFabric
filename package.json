@@ -1,0 +1,17 @@
+{
+  "name": "lanfabric",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cleancache": "node -e \"const fs = require('fs'); fs.rmSync('./client_build', { recursive: true, force: true }); fs.mkdirSync('./client_build'); console.log('done');\"",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "xxdandelionxx",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
