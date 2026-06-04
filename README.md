@@ -3,6 +3,14 @@
 >
 > (LANFabric is not associated with Fabric API in any way)
 
+> [!IMPORTANT]
+> Clientside is not yet perfectly polished right now and before playing on a client machine, make sure you have **Python 3** and `minecraft_launcher_lib` PyPI package installed.
+>
+> You can simply install `minecraft_launcher_lib` package like that:
+> ```bash
+> pip install minecraft_launcher_lib==8.0
+> ```
+
 # 📜 LANFabric
 A lightweight, high-performance, self-hosted deployment hub designed to distribute fully standalone (not quite, Python still required clientside) offline Minecraft environments over local area networks (LAN)
 
