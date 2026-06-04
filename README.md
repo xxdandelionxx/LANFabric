@@ -1,3 +1,8 @@
+> [!NOTE]
+> Currently, LANFabric downloads clean vanilla Minecraft versions directly from Mojang's servers. Support for automated modded runtimes (such as Forge/Fabric loaders) is planned for future major updates
+>
+> (LANFabric is not associated with Fabric API in any way)
+
 # 📜 LANFabric
 A lightweight, high-performance, self-hosted deployment hub designed to distribute fully standalone (not quite, Python still required clientside) offline Minecraft environments over local area networks (LAN)
 
