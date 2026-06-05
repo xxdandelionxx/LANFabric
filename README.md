@@ -76,6 +76,40 @@ Inside the interactive LANFabric `>>>` console, you can run:
 
 ---
 
+## 💻 Client Usage
+
+Once the server is running on a host machine, any client on the same local network can download an offline Minecraft build from your **versions/** folder
+
+### 0. Ensure client machine has Python 3 and `minecraft_launcher_lib` installed
+This is currently the only limitation LANFabric has. In order to run `run.py` file inside the downloaded offline Minecraft copy, you need Python 3 and `minecraft_launcher_lib` PyPI packages downloaded. *To be fixed in a future update!*
+
+### 1. Find your host's server IP address
+Usually when you start your server with `npm start` it will show your local IP-address that clients can connect to.
+
+If LANFabric shows `127.0.0.1:3000` as your IP, try to make sure you're connected to your network (not just localhost) or exit the program (Ctrl+C or `exit` inside of LANFabric custom terminal) and try,
+- **Windows**: `ipconfig` (look for `IPv4 Address`)
+- **Linux/Mac**: `ip addr` or `hostname -I`
+
+### 2. Open LANFabric Update Center on the client
+On the client computer, open a web browser and go to:
+
+`http://[SERVER_IP]:3000`
+
+Replace [SERVER_IP] with your local IP-address from step 1.
+
+### 3. Download a Minecraft version
+- The web interface will show all versions you've installed on the server (using the `download` command)
+- Click on the version to download it as ZIP archive
+
+### 4. Launch the game
+Extract the downloaded ZIP to a folder on the client machine. Then run this command inside your game directory:
+```bash
+python run.py
+```
+*(The* `run.py` *script is included inside each downloaded ZIP archive)*
+
+---
+
 ## 🛡️ License & Educational Disclaimer
 
 This project is licensed under **MIT License**, check [LICENSE](LICENSE) file for details.
