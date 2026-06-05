@@ -81,7 +81,7 @@ Inside the interactive LANFabric `>>>` console, you can run:
 Once the server is running on a host machine, any client on the same local network can download an offline Minecraft build from your **versions/** folder
 
 ### 0. Ensure client machine has Python 3 and `minecraft_launcher_lib` installed
-This is currently the only limitation LANFabric has. In order to run `run.py` file inside the downloaded offline Minecraft copy, you need Python 3 and `minecraft_launcher_lib` PyPI packages downloaded. *To be fixed in a future update!*
+This is currently the only limitation LANFabric has. In order to run `run.py` file inside the downloaded offline Minecraft client, you need Python 3 and `minecraft_launcher_lib` PyPI packages downloaded. *To be fixed in a future update!*
 
 ### 1. Find your host's server IP address
 Usually when you start your server with `npm start` it will show your local IP-address that clients can connect to.
