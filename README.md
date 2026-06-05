@@ -1,8 +1,3 @@
-> [!NOTE]
-> Currently, LANFabric downloads clean vanilla Minecraft versions directly from Mojang's servers. Support for automated modded runtimes (such as Forge/Fabric loaders) is planned for future major updates
->
-> (LANFabric is not associated with Fabric API in any way)
-
 > [!IMPORTANT]
 > Clientside is not yet perfectly polished right now and before playing on a client machine, make sure you have **Python 3** and `minecraft_launcher_lib` PyPI package installed.
 >
@@ -10,6 +5,11 @@
 > ```bash
 > pip install minecraft_launcher_lib==8.0
 > ```
+
+> [!NOTE]
+> Currently, LANFabric downloads clean vanilla Minecraft versions directly from Mojang's servers. Support for automated modded runtimes (such as Forge/Fabric loaders) is planned for future major updates
+>
+> (LANFabric is not associated with Fabric API in any way)
 
 # 📜 LANFabric
 A lightweight, high-performance, self-hosted deployment hub designed to distribute fully standalone (not quite, Python still required clientside) offline Minecraft environments over local area networks (LAN)
@@ -78,4 +78,6 @@ Inside the interactive LANFabric `>>>` console, you can run:
 
 ## 🛡️ License & Educational Disclaimer
 
-This project was built entirely for educational purposes to demonstrate asynchronous runtime orchestration, file streams, and cross-runtime integration between Node.js and Python. No copyright files or binaries are distributed directly via this repository; everything is fetched dynamically via scripts.
+This project is licensed under **MIT License**, check [LICENSE](LICENSE) file for details.
+
+**Educational Disclaimer**: *This project was built entirely for educational purposes to demonstrate asynchronous runtime orchestration, file streams, and cross-runtime integration between Node.js and Python. No copyright files or binaries are distributed directly via this repository; everything is fetched dynamically via scripts.*
