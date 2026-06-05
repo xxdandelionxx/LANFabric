@@ -202,6 +202,15 @@ rl.on('line', (line) => {
                 console.log(`!! [LANFabric] Could not clear cache: ${err.message}`);
             }
             break;
+
+        case 'ip':
+            const localIP = getLocalIP();
+
+            console.log(`[LANFabric] Active on port ${PORT}`);
+            console.log(`[LANFabric] Link: http://${localIP}:${PORT}`);
+            console.log(`-------------------------------------------`);
+
+            break;
         
         case 'help':
             console.log('--- AVAILABLE COMMANDS ---');
@@ -209,6 +218,7 @@ rl.on('line', (line) => {
             console.log('download [version] - Pre-install a specific Minecraft version via Python');
             console.log('uninstall [v/idx]  - Delete a version by its name or MC-V Index number');
             console.log('cache              - Checks for any cache left on your hardware and automatically cleans it up')
+            console.log('ip                 - Displays your local IP address and port for LANFabric Update Center')
             console.log('cls                - Clears console')
             console.log('exit               - Turn off LANFabric server');
             console.log('--------------------------');
